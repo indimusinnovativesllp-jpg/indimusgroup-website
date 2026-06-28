@@ -1,0 +1,424 @@
+/*==================================================
+INDIMUS WEBSITE
+Premium Responsive CSS
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    background:#08140d;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/*================ NAVBAR ================*/
+
+.navbar{
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(18px);
+    transition:.4s;
+    padding:18px 0;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+    color:#32d97c !important;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:20px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#32d97c !important;
+}
+
+/*================ HERO ================*/
+
+.hero{
+
+    background:
+    linear-gradient(rgba(0,0,0,.72),
+    rgba(0,0,0,.72)),
+    url(images/background.jpg);
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+}
+
+.hero-logo{
+
+    width:330px;
+    filter:drop-shadow(0 0 25px #22ff88);
+
+}
+
+.small-title{
+
+    color:#22ff88;
+
+    letter-spacing:4px;
+
+    font-weight:600;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    line-height:1.2;
+
+    margin-top:15px;
+
+}
+
+.hero p{
+
+    color:#d8d8d8;
+
+    line-height:1.9;
+
+}
+
+/*================ BUTTONS ================*/
+
+.btn-success{
+
+    background:#19b65d;
+
+    border:none;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+}
+
+.btn-success:hover{
+
+    transform:translateY(-5px);
+
+    background:#27db76;
+
+    box-shadow:0 15px 40px rgba(0,255,120,.35);
+
+}
+
+.btn-outline-light{
+
+    border-radius:40px;
+
+}
+
+/*================ PORTFOLIO ================*/
+
+.portfolio{
+
+    padding:100px 0;
+
+    background:#091710;
+
+}
+
+.portfolio h2{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.portfolio p{
+
+    color:#cccccc;
+
+}
+
+.portfolio-card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:25px;
+
+    transition:.45s;
+
+    text-align:center;
+
+    height:100%;
+
+}
+
+.portfolio-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+
+    0 20px 50px rgba(0,255,140,.18);
+
+    border-color:#27ff92;
+
+}
+
+.portfolio-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+}
+
+.portfolio-card h4{
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.portfolio-card p{
+
+    min-height:60px;
+
+}
+
+.badge{
+
+    font-size:14px;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+}
+
+/*================ COUNTER ================*/
+
+.counter{
+
+    background:#06110b;
+
+    padding:80px 0;
+
+}
+
+.counter h1{
+
+    font-size:60px;
+
+    color:#22ff88;
+
+    font-weight:700;
+
+}
+
+.counter p{
+
+    color:#ffffff;
+
+    font-size:18px;
+
+}
+
+/*================ FOOTER ================*/
+
+footer{
+
+    background:#040a06;
+
+    padding:30px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+footer p{
+
+    margin:0;
+
+    color:#cccccc;
+
+}
+
+/*================ SCROLLBAR ================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#19c86c;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08140d;
+
+}
+
+/*================ IMAGE EFFECTS ================*/
+
+.portfolio-card img{
+
+    transition:.45s;
+
+}
+
+.portfolio-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:1200px){
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+padding-top:100px;
+
+}
+
+.hero-logo{
+
+margin-top:40px;
+
+width:250px;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.portfolio{
+
+padding:70px 0;
+
+}
+
+.portfolio h2{
+
+font-size:32px;
+
+}
+
+.counter h1{
+
+font-size:42px;
+
+}
+
+.nav-link{
+
+margin-left:0;
+
+padding:12px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:15px;
+
+}
+
+.btn-outline-light{
+
+margin-left:0 !important;
+
+}
+
+.hero-logo{
+
+width:180px;
+
+}
+
+.portfolio-card img{
+
+height:190px;
+
+}
+
+.counter h1{
+
+font-size:34px;
+
+}
+
+}
