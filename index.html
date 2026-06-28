@@ -7,9 +7,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Indimus Innovatives LLP</title>
+<title>INDIMUS | Innovatives LLP</title>
+
+<meta name="description" content="Indimus Innovatives LLP - Innovating Ideas Into Real-World Solutions">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -17,22 +29,21 @@
 
 <body>
 
-<!-- NAVBAR -->
+<!--================== NAVBAR ==================-->
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top">
 
 <div class="container">
 
-<a class="navbar-brand fw-bold" href="#">
-INDIMUS
+<a class="navbar-brand" href="#">
+
+<img src="logo.png" class="logo">
+
 </a>
 
-<button class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 
-<span class="navbar-toggler-icon"></span>
+<i class="fas fa-bars"></i>
 
 </button>
 
@@ -40,17 +51,65 @@ data-bs-target="#menu">
 
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+<li class="nav-item">
 
-<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+<a class="nav-link active" href="#home">
 
-<li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+Home
 
-<li class="nav-item"><a class="nav-link" href="#">Innovations</a></li>
+</a>
 
-<li class="nav-item"><a class="nav-link" href="#">Patents</a></li>
+</li>
 
-<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+<li class="nav-item">
+
+<a class="nav-link" href="#about">
+
+About
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#innovation">
+
+Innovations
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#products">
+
+Products
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#patents">
+
+Patents
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#contact">
+
+Contact
+
+</a>
+
+</li>
 
 </ul>
 
@@ -60,9 +119,11 @@ data-bs-target="#menu">
 
 </nav>
 
-<!-- HERO -->
+<!--================== HERO ==================-->
 
-<section class="hero">
+<section class="hero" id="home">
+
+<div class="hero-overlay"></div>
 
 <div class="container">
 
@@ -70,251 +131,83 @@ data-bs-target="#menu">
 
 <div class="col-lg-6">
 
-<h5>WELCOME TO</h5>
+<div data-aos="fade-right">
+
+<div class="hero-tag">
+
+<i class="fa-solid fa-circle-check"></i>
+
+Innovation • Technology • Sustainability
+
+</div>
 
 <h1>
 
-INDIMUS
+Innovating Ideas
 
 <br>
 
-INNOVATIVES LLP
+Into
+
+<span>
+
+Real-World
+
+</span>
+
+Solutions
 
 </h1>
 
 <p>
 
-Innovating Ideas Into Real-World Solutions
+We develop innovative products, smart technologies,
+
+digital platforms and sustainable solutions that create
+
+real-world impact.
 
 </p>
 
-<div class="mt-4">
+<div class="hero-buttons">
 
-<a href="#" class="btn btn-success">
+<a href="#innovation" class="btn btn-success">
 
-Our Products
-
-</a>
-
-<a href="#" class="btn btn-outline-light">
-
-Contact
+Explore Innovations
 
 </a>
 
-</div>
+<a href="#contact" class="btn btn-outline-light">
+
+Contact Us
+
+</a>
 
 </div>
 
-<div class="col-lg-6 text-center">
+<div class="hero-stats">
 
-<img src="logo.png"
+<div>
 
-class="hero-image img-fluid">
+<h3>9+</h3>
 
-</div>
-
-</div>
+<span>Years</span>
 
 </div>
 
-</section>
+<div>
 
-<!-- PORTFOLIO -->
+<h3>7</h3>
 
-<section class="portfolio">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<h2>Our Innovation Portfolio</h2>
-
-<p>
-
-Innovative Products & Digital Solutions
-
-</p>
+<span>Patents</span>
 
 </div>
 
-<div class="row g-4">
+<div>
 
-<div class="col-lg-4 col-md-6">
+<h3>30+</h3>
 
-<div class="portfolio-card">
-
-<img src="wick.jpg">
-
-<h4>Wick Irrigation</h4>
-
-<p>Water Saving Irrigation System</p>
-
-<span class="badge bg-success">
-
-Presently in Market
-
-</span>
-
-</div>
-
-</div>
-
-<div class="col-lg-4 col-md-6">
-
-<div class="portfolio-card">
-
-<img src="dragon.jpg">
-
-<h4>Dragon Smart Care</h4>
-
-<p>Complete Dragon Farming Solution</p>
-
-<span class="badge bg-success">
-
-Presently in Market
-
-</span>
-
-</div>
-
-</div>
-
-<div class="col-lg-4 col-md-6">
-
-<div class="portfolio-card">
-
-<img src="findit.jpg">
-
-<h4>FindIt App</h4>
-
-<p>Lost & Found Platform</p>
-
-<span class="badge bg-primary">
-
-Play Store
-
-</span>
-
-</div>
-
-</div>
-
-<div class="col-lg-4 col-md-6">
-
-<div class="portfolio-card">
-
-<img src="goods.jpg">
-
-<h4>Goods Return Ride</h4>
-
-<p>Smart Delivery Solution</p>
-
-<span class="badge bg-warning text-dark">
-
-Under Progress
-
-</span>
-
-</div>
-
-</div>
-
-<div class="col-lg-4 col-md-6">
-
-<div class="portfolio-card">
-
-<img src="dress.jpg">
-
-<h4>Virtual Dress Trial</h4>
-
-<p>AI Based Dress Matching</p>
-
-<span class="badge bg-info">
-
-AI Project
-
-</span>
-
-</div>
-
-</div>
-
-<div class="col-lg-4 col-md-6">
-
-<div class="portfolio-card">
-
-<img src="bike.jpg">
-
-<h4>Bike Cleaning</h4>
-
-<p>Automatic Cleaning System</p>
-
-<span class="badge bg-secondary">
-
-Concept
-
-</span>
-
-</div>
-
-</div>
-
-<div class="col-lg-4 col-md-6">
-
-<div class="portfolio-card">
-
-<img src="kids.jpg">
-
-<h4>Kids Learning</h4>
-
-<p>Educational Innovation</p>
-
-<span class="badge bg-secondary">
-
-Concept
-
-</span>
-
-</div>
-
-</div>
-
-<div class="col-lg-4 col-md-6">
-
-<div class="portfolio-card">
-
-<img src="ear.jpg">
-
-<h4>Ear Cleaning Device</h4>
-
-<p>Medical Innovation</p>
-
-<span class="badge bg-secondary">
-
-Research
-
-</span>
-
-</div>
-
-</div>
-
-<div class="col-lg-4 col-md-6">
-
-<div class="portfolio-card">
-
-<img src="qr.jpg">
-
-<h4>QR Complaint System</h4>
-
-<p>Digital Complaint Platform</p>
-
-<span class="badge bg-primary">
-
-Patent Filed
-
-</span>
+<span>Applications</span>
 
 </div>
 
@@ -323,10 +216,44 @@ Patent Filed
 </div>
 
 </div>
+
+<div class="col-lg-6">
+
+<div class="hero-image" data-aos="zoom-in">
+
+<img src="hero.png" class="img-fluid">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<a href="#about" class="scroll-down">
+
+<i class="fa-solid fa-angles-down"></i>
+
+</a>
 
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:1000,
+
+once:true
+
+});
+
+</script>
 
 <script src="script.js"></script>
 
