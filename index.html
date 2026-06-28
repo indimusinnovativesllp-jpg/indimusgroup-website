@@ -1,775 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDIMUS INNOVATIONS LLP - Smart Agricultural Solutions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indimus Innovatives LLP</title>
 
-        :root {
-            --primary-green: #2ecc71;
-            --dark-bg: #0f1f14;
-            --text-dark: #1a1a1a;
-            --text-light: #ffffff;
-            --gray-light: #f5f5f5;
-            --gray-medium: #e0e0e0;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-        }
+<style>
 
-        /* ===== HEADER & NAVIGATION ===== */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 3rem;
-            background: var(--text-light);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-       .logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-.logo img {
-    height: 45px;
+body{
+background:#ffffff;
+overflow-x:hidden;
+color:#222;
 }
 
-.logo div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(12px);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+z-index:999;
 }
 
-.logo div div:first-child {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #2ecc71;
+.logo{
+font-size:28px;
+font-weight:800;
+color:#14532d;
 }
 
-.logo div div:last-child {
-    font-size: 0.8rem;
-    color: #2ecc71;
-    font-style: italic;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+nav a{
+text-decoration:none;
+margin-left:35px;
+font-weight:600;
+color:#333;
+transition:.3s;
 }
 
-        nav {
-            display: flex;
-            gap: 2.5rem;
-            align-items: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--primary-green);
-        }
-
-        .cta-btn {
-            background: var(--primary-green);
-            color: var(--text-light);
-            padding: 0.75rem 1.5rem;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .cta-btn:hover {
-            background: #27ae60;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
-        }
-
-        /* ===== HERO SECTION ===== */
-        .hero {
-            background: linear-gradient(135deg, var(--dark-bg) 0%, #1a3a2a 100%);
-            color: var(--text-light);
-            padding: 5rem 3rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            min-height: 600px;
-        }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-
-        .hero-content h1 .accent {
-            color: var(--primary-green);
-        }
-
-        .hero-content p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            line-height: 1.8;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .btn-primary {
-            background: var(--primary-green);
-            color: var(--text-light);
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .btn-primary:hover {
-            background: #27ae60;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(46, 204, 113, 0.4);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--text-light);
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            border: 2px solid var(--primary-green);
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .btn-secondary:hover {
-            background: var(--primary-green);
-            color: var(--text-light);
-        }
-
-        .hero-image {
-            background: linear-gradient(135deg, rgba(46,204,113,0.1) 0%, rgba(46,204,113,0.05) 100%);
-            border-radius: 15px;
-            height: 100%;
-            min-height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            border: 2px solid rgba(46,204,113,0.2);
-            position: relative;
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 13px;
-        }
-
-        .hero-image::before {
-            content: "📸 Add Product Image";
-            position: absolute;
-            color: rgba(255,255,255,0.5);
-            font-size: 1.2rem;
-            text-align: center;
-        }
-
-        /* ===== STATS SECTION ===== */
-        .stats {
-            background: var(--gray-light);
-            padding: 3rem;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .stat-item {
-            padding: 1.5rem;
-        }
-
-        .stat-icon {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-green);
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            font-size: 0.95rem;
-            color: #666;
-            font-weight: 500;
-        }
-
-        /* ===== PRODUCTS SECTION ===== */
-        .products {
-            padding: 5rem 3rem;
-            background: var(--text-light);
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-label {
-            color: var(--primary-green);
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 1rem;
-        }
-
-        .section-header h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--text-dark);
-        }
-
-        .section-header p {
-            font-size: 1.1rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            border: 1px solid var(--gray-medium);
-            transition: all 0.3s;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .product-card:hover {
-            border-color: var(--primary-green);
-            box-shadow: 0 10px 30px rgba(46,204,113,0.1);
-        }
-
-        .product-info h3 {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            color: var(--primary-green);
-        }
-
-        .product-info p {
-            color: #666;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .product-features {
-            list-style: none;
-            margin-bottom: 1.5rem;
-        }
-
-        .product-features li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            color: #555;
-            position: relative;
-        }
-
-        .product-features li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--primary-green);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .product-image {
-            background: linear-gradient(135deg, rgba(46,204,113,0.1) 0%, rgba(46,204,113,0.05) 100%);
-            border-radius: 10px;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid rgba(46,204,113,0.2);
-            color: rgba(0,0,0,0.3);
-            font-size: 0.9rem;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .product-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        /* ===== INNOVATION SECTION ===== */
-        .innovation {
-            background: linear-gradient(135deg, var(--dark-bg) 0%, #1a3a2a 100%);
-            color: var(--text-light);
-            padding: 5rem 3rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .innovation-content h2 {
-            font-size: 2.8rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.3;
-        }
-
-        .innovation-content p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            line-height: 1.8;
-        }
-
-        .innovation-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-
-        .innovation-item {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .innovation-icon {
-            font-size: 2rem;
-            min-width: 3rem;
-        }
-
-        .innovation-item h4 {
-            font-size: 1rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .innovation-item p {
-            font-size: 0.95rem;
-            opacity: 0.85;
-            margin: 0;
-        }
-
-        /* ===== TRUST SECTION ===== */
-        .trust {
-            padding: 5rem 3rem;
-            background: var(--text-light);
-            text-align: center;
-        }
-
-        .trust h2 {
-            font-size: 2.3rem;
-            margin-bottom: 3rem;
-            color: var(--text-dark);
-        }
-
-        .trust-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 2rem;
-        }
-
-        .trust-item {
-            padding: 1.5rem;
-        }
-
-        .trust-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            width: 80px;
-            height: 80px;
-            border: 2px solid var(--gray-medium);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            transition: all 0.3s;
-        }
-
-        .trust-item:hover .trust-icon {
-            border-color: var(--primary-green);
-            background: rgba(46,204,113,0.1);
-        }
-
-        .trust-item h4 {
-            font-size: 0.95rem;
-            color: var(--text-dark);
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        /* ===== CTA SECTION ===== */
-        .final-cta {
-            background: linear-gradient(135deg, var(--primary-green) 0%, #27ae60 100%);
-            color: var(--text-light);
-            padding: 4rem 3rem;
-            text-align: center;
-            border-radius: 15px;
-            margin: 5rem 3rem;
-        }
-
-        .final-cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .final-cta p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            background: var(--text-dark);
-            color: var(--text-light);
-            padding: 3rem;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-        }
-
-        footer h4 {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        footer a {
-            display: block;
-            margin-bottom: 0.8rem;
-            opacity: 0.8;
-            text-decoration: none;
-            color: var(--text-light);
-            transition: opacity 0.3s;
-        }
-
-        footer a:hover {
-            opacity: 1;
-            color: var(--primary-green);
-        }
-
-        footer p {
-            opacity: 0.7;
-            font-size: 0.9rem;
-        }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
-            header {
-                padding: 1rem 1.5rem;
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 1rem;
-            }
-
-            .hero {
-                grid-template-columns: 1fr;
-                padding: 3rem 1.5rem;
-                min-height: auto;
-            }
-
-            .hero-content h1 {
-                font-size: 2.2rem;
-            }
-
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .products-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .product-card {
-                grid-template-columns: 1fr;
-            }
-
-            .innovation {
-                grid-template-columns: 1fr;
-            }
-
-            .innovation-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .trust-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            footer {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+nav a:hover{
+color:#16a34a;
+}
+
+.hero{
+
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 8%;
+background:
+linear-gradient(to right,
+rgba(6,40,24,.92),
+rgba(6,40,24,.55)),
+url("images/farm.jpg");
+
+background-size:cover;
+background-position:center;
+}
+
+.left{
+
+width:50%;
+color:white;
+}
+
+.tag{
+
+display:inline-block;
+background:#16a34a;
+padding:8px 20px;
+border-radius:50px;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.left h1{
+
+font-size:68px;
+line-height:1.05;
+margin-bottom:20px;
+font-weight:800;
+}
+
+.left p{
+
+font-size:18px;
+line-height:32px;
+opacity:.92;
+margin-bottom:35px;
+}
+
+.btns{
+
+display:flex;
+gap:20px;
+}
+
+.btn{
+
+padding:16px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.4s;
+}
+
+.primary{
+
+background:#16a34a;
+color:white;
+}
+
+.primary:hover{
+
+background:#0f7a35;
+transform:translateY(-4px);
+}
+
+.secondary{
+
+border:2px solid white;
+color:white;
+}
+
+.secondary:hover{
+
+background:white;
+color:#14532d;
+}
+
+.right{
+
+width:42%;
+display:flex;
+justify-content:center;
+}
+
+.right img{
+
+width:100%;
+max-width:550px;
+filter:drop-shadow(0 35px 40px rgba(0,0,0,.35));
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-18px);}
+100%{transform:translateY(0);}
+}
+
+.stats{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+padding:70px 8%;
+background:white;
+gap:25px;
+}
+
+.card{
+
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+text-align:center;
+transition:.4s;
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+}
+
+.card h2{
+
+font-size:45px;
+color:#16a34a;
+margin-bottom:10px;
+}
+
+.products{
+
+padding:100px 8%;
+background:#f6f8f9;
+}
+
+.title{
+
+text-align:center;
+margin-bottom:60px;
+}
+
+.title h2{
+
+font-size:42px;
+color:#14532d;
+margin-bottom:15px;
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:40px;
+}
+
+.product{
+
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 20px 45px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.product:hover{
+
+transform:translateY(-12px);
+}
+
+.product img{
+
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.content{
+
+padding:35px;
+}
+
+.content h3{
+
+font-size:30px;
+margin-bottom:15px;
+color:#14532d;
+}
+
+.content p{
+
+line-height:30px;
+color:#555;
+margin-bottom:25px;
+}
+
+.read{
+
+display:inline-block;
+padding:14px 28px;
+background:#16a34a;
+color:white;
+text-decoration:none;
+border-radius:50px;
+}
+
+footer{
+
+background:#0f172a;
+color:white;
+text-align:center;
+padding:45px;
+}
+
+@media(max-width:1000px){
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+height:auto;
+padding-top:170px;
+padding-bottom:80px;
+}
+
+.left{
+
+width:100%;
+}
+
+.right{
+
+width:100%;
+margin-top:50px;
+}
+
+.left h1{
+
+font-size:48px;
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+}
+
+.grid{
+
+grid-template-columns:1fr;
+}
+
+nav{
+
+display:none;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-    
-    <!-- HEADER -->
+
 <header>
-    <div class="logo">
-        <img src="images/logo.jpg" alt="INDIMUS Logo" style="height: 50px; margin-right: 15px;">
-        <div>
-            <div style="font-size: 1.3rem; font-weight: 700; color: #2ecc71;">INDIMUS INNOVATIONS LLP</div>
-            <div style="font-size: 0.85rem; color: #666; font-weight: 500;">Thinking Beyond Tomorrow</div>
-        </div>
-    </div>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#innovation">Innovation</a>
-        <a href="#about">About Us</a>
-        <button class="cta-btn">Get In Touch</button>
-    </nav>
+
+<div class="logo">
+INDIMUS
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Products</a>
+<a href="#">Patents</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+
+</nav>
+
 </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Smart Agricultural<br><span class="accent">Solutions for Farmers</span></h1>
-            <p>Save water up to 70% | Increase crop yield | Government subsidies available | UV stabilized long-life products | Proven field-tested technology | Supporting sustainable farming across Kerala</p>
-            <div class="hero-buttons">
-                <a href="#products" class="btn-primary">Explore Our Products</a>
-                <a href="#contact" class="btn-secondary">Contact Us</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <!-- Replace src with your actual image path -->
-            <!-- <img src="path-to-your-image.jpg" alt="Agricultural Innovation"> -->
-        </div>
-    </section>
+<section class="hero">
 
-    <!-- STATS SECTION -->
-    <section class="stats">
-        <div class="stat-item">
-            <div class="stat-icon">⏱️</div>
-            <div class="stat-number">9+</div>
-            <div class="stat-label">Years Experience</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon">🏆</div>
-            <div class="stat-number">7</div>
-            <div class="stat-label">Patents Granted</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon">📋</div>
-            <div class="stat-number">30+</div>
-            <div class="stat-label">Patents Filed</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon">✨</div>
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Original & UV Added</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon">💧</div>
-            <div class="stat-number">50%</div>
-            <div class="stat-label">Water Saved</div>
-        </div>
-    </section>
+<div class="left">
 
-    <!-- PRODUCTS SECTION -->
-    <section class="products" id="products">
-        <div class="section-header">
-            <div class="section-label">OUR PRODUCTS</div>
-            <h2>Smart Solutions for Modern Agriculture</h2>
-            <p>Innovative, reliable and field-tested products built to deliver long-term performance.</p>
-        </div>
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-info">
-                    <h3>🌾 Wick Irrigation System</h3>
-                    <p>Water-saving irrigation technology for crops and higher yield</p>
-                    <ul class="product-features">
-                        <li>50% Government Subsidy Announced</li>
-                        <li>Saves up to 70% Water</li>
-                        <li>UV Stabilized - Long Life</li>
-                        <li>Low Maintenance</li>
-                    </ul>
-                    <a href="#" class="btn-primary">Know More</a>
-                </div>
-                <div class="product-image">
-                    <!-- Replace src with actual product image -->
-                    <!-- <img src="path-to-product-image-1.jpg" alt="Irrigation System"> -->
-                </div>
-            </div>
+<div class="tag">
+9 Years of Innovation
+</div>
 
-            <div class="product-card">
-                <div class="product-info">
-                    <h3>🐉 Dragon Fruit Cultivation System</h3>
-                    <p>Complete support system for Dragon Fruit cultivation and care</p>
-                    <ul class="product-features">
-                        <li>Strong & Durable Structure</li>
-                        <li>Easy Installation</li>
-                        <li>UV Stabilized - Long Life</li>
-                        <li>High Load Capacity</li>
-                    </ul>
-                    <a href="#" class="btn-primary">Know More</a>
-                </div>
-                <div class="product-image">
-                    <!-- Replace src with actual product image -->
-                    <!-- <img src="path-to-product-image-2.jpg" alt="Dragon Smart Care"> -->
-                </div>
-            </div>
-        </div>
-    </section>
+<h1>
 
-    <!-- INNOVATION SECTION -->
-    <section class="innovation" id="innovation">
-        <div class="innovation-content">
-            <h2>Building the Future<br>with Innovation</h2>
-            <p>INDIMUS INNOVATIONS LLP is committed to working on new agricultural products, smart devices, mobile applications and AI powered solutions to empower farmers and build a sustainable future.</p>
-            <div class="innovation-grid">
-                <div class="innovation-item">
-                    <div class="innovation-icon">🌾</div>
-                    <div>
-                        <h4>Agricultural Products</h4>
-                        <p>Field-tested solutions</p>
-                    </div>
-                </div>
-                <div class="innovation-item">
-                    <div class="innovation-icon">📱</div>
-                    <div>
-                        <h4>Mobile Applications</h4>
-                        <p>Easy management tools</p>
-                    </div>
-                </div>
-                <div class="innovation-item">
-                    <div class="innovation-icon">💡</div>
-                    <div>
-                        <h4>Smart Devices</h4>
-                        <p>IoT-enabled solutions</p>
-                    </div>
-                </div>
-                <div class="innovation-item">
-                    <div class="innovation-icon">🤖</div>
-                    <div>
-                        <h4>AI-powered Solutions</h4>
-                        <p>Machine learning insights</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="innovation-image" style="text-align: center; font-size: 5rem;">
-            💚
-        </div>
-    </section>
+Engineering<br>
 
-    <!-- TRUST SECTION -->
-    <section class="trust" id="about">
-        <h2>Why Choose Us</h2>
-        <div class="trust-grid">
-            <div class="trust-item">
-                <div class="trust-icon">✨</div>
-                <h4>Original & UV Added</h4>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">⏳</div>
-                <h4>Long Life & Durable</h4>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">🧪</div>
-                <h4>Field Tested & Proven</h4>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">👨‍🌾</div>
-                <h4>Farmer Focused</h4>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">🛠️</div>
-                <h4>After Sales Support</h4>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">🔬</div>
-                <h4>Continuous R&D</h4>
-            </div>
-        </div>
-    </section>
+Tomorrow's<br>
 
-    <!-- FINAL CTA -->
-    <section class="final-cta" id="contact">
-        <h2>Join the Agricultural Innovation Movement</h2>
-        <p>Partner with INDIMUS INNOVATIONS LLP and transform your farming practices with sustainable, proven solutions</p>
-        <button class="btn-primary" style="background: white; color: var(--primary-green); cursor: pointer;">Contact Us Now</button>
-    </section>
+Agriculture
 
-    <!-- FOOTER -->
-    <footer>
-        <div>
-            <h4>🌱 INDIMUS INNOVATIONS LLP</h4>
-            <p>Innovating sustainable agricultural solutions. Thinking beyond tomorrow.</p>
-        </div>
-        <div>
-            <h4>Quick Links</h4>
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#innovation">Innovation</a>
-            <a href="#about">About Us</a>
-        </div>
-        <div>
-            <h4>Products</h4>
-            <a href="#">Smart Irrigation</a>
-            <a href="#">Dragon Care System</a>
-            <a href="#">Mobile Apps</a>
-        </div>
-        <div>
-            <h4>Contact</h4>
-            <a href="tel:+919846746673">+91 98467 46673</a>
-            <a href="mailto:info@indimusgroup.com">info@indimusgroup.com</a>
-            <p>Kerala, India</p>
-        </div>
-    </footer>
+</h1>
+
+<p>
+
+Indimus Innovatives LLP develops innovative agricultural technologies including the Dragon Smart Care System and Wick Irrigation System. Our products are manufactured using Original UV Stabilized Materials for long-term outdoor durability.
+
+</p>
+
+<div class="btns">
+
+<a href="#" class="btn primary">
+
+Explore Products
+
+</a>
+
+<a href="#" class="btn secondary">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<img src="images/dragon-smart-care.png">
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="card">
+
+<h2>9+</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+<div class="card">
+
+<h2>7</h2>
+
+<p>Granted Patents</p>
+
+</div>
+
+<div class="card">
+
+<h2>30+</h2>
+
+<p>Patent Filings</p>
+
+</div>
+
+<div class="card">
+
+<h2>50%</h2>
+
+<p>Govt Subsidy Product</p>
+
+</div>
+
+</section>
+
+<section class="products">
+
+<div class="title">
+
+<h2>Our Innovations</h2>
+
+<p>Innovative Agricultural Solutions</p>
+
+</div>
+
+<div class="grid">
+
+<div class="product">
+
+<img src="images/dragon-smart-care.png">
+
+<div class="content">
+
+<h3>Dragon Smart Care System</h3>
+
+<p>
+
+A premium support system specially designed for Dragon Fruit cultivation using Original UV Stabilized materials.
+
+</p>
+
+<a href="#" class="read">
+
+Learn More
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="images/wick-irrigation.jpg">
+
+<div class="content">
+
+<h3>Wick Irrigation System</h3>
+
+<p>
+
+Government subsidy eligible water-saving irrigation technology designed for sustainable farming.
+
+</p>
+
+<a href="#" class="read">
+
+Learn More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Indimus Innovatives LLP
+
+</footer>
+
 </body>
 </html>
