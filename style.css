@@ -63,19 +63,19 @@ display:flex;
 
 align-items:center;
 
-background:
-linear-gradient(rgba(0,0,0,.60),
-rgba(0,0,0,.82)),
+background-image:
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.82)),
 url("hero-bg.png");
 
 background-size:cover;
 
-background-position:center;
+background-position:center center;
+
+background-repeat:no-repeat;
 
 overflow:hidden;
 
 }
-
 .hero-overlay{
 
 position:absolute;
