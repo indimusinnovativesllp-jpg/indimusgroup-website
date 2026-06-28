@@ -1,95 +1,141 @@
-/*==================================================
-INDIMUS WEBSITE
-Premium Responsive CSS
-==================================================*/
+/*==========================
+INDIMUS PREMIUM CSS v1
+==========================*/
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
-    background:#08140d;
-    color:#ffffff;
-    overflow-x:hidden;
+
+font-family:Arial,Helvetica,sans-serif;
+
+background:#08110d;
+
+color:white;
+
+overflow-x:hidden;
+
 }
 
 /*================ NAVBAR ================*/
 
 .navbar{
-    background:rgba(0,0,0,.45);
-    backdrop-filter:blur(18px);
-    transition:.4s;
-    padding:18px 0;
+
+background:rgba(0,0,0,.45);
+
+backdrop-filter:blur(20px);
+
+padding:15px 0;
+
+transition:.4s;
+
 }
 
 .navbar-brand{
-    font-size:28px;
-    font-weight:700;
-    color:#32d97c !important;
+
+font-size:30px;
+
+font-weight:700;
+
+color:#2cff88!important;
+
+letter-spacing:1px;
+
 }
 
 .nav-link{
-    color:#fff !important;
-    margin-left:20px;
-    font-weight:500;
-    transition:.3s;
+
+color:white!important;
+
+margin-left:20px;
+
+font-size:16px;
+
+transition:.4s;
+
 }
 
 .nav-link:hover{
-    color:#32d97c !important;
+
+color:#2cff88!important;
+
 }
 
 /*================ HERO ================*/
 
 .hero{
 
-    background:
-    linear-gradient(rgba(0,0,0,.72),
-    rgba(0,0,0,.72)),
-    url(images/background.jpg);
+min-height:100vh;
 
-    background-size:cover;
-    background-position:center;
+display:flex;
 
-    position:relative;
+align-items:center;
+
+background:
+linear-gradient(rgba(0,0,0,.65),
+rgba(0,0,0,.75)),
+url("background.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+padding-top:80px;
+
 }
 
-.hero-logo{
+.hero h5{
 
-    width:330px;
-    filter:drop-shadow(0 0 25px #22ff88);
+color:#2cff88;
 
-}
+letter-spacing:4px;
 
-.small-title{
+font-size:18px;
 
-    color:#22ff88;
-
-    letter-spacing:4px;
-
-    font-weight:600;
+margin-bottom:20px;
 
 }
 
 .hero h1{
 
-    font-size:60px;
+font-size:70px;
 
-    line-height:1.2;
+font-weight:800;
 
-    margin-top:15px;
+line-height:1.15;
+
+margin-bottom:25px;
 
 }
 
 .hero p{
 
-    color:#d8d8d8;
+font-size:20px;
 
-    line-height:1.9;
+color:#dddddd;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+max-width:550px;
+
+}
+
+.hero-image{
+
+width:430px;
+
+max-width:100%;
+
+animation:float 5s infinite ease-in-out;
 
 }
 
@@ -97,221 +143,61 @@ body{
 
 .btn-success{
 
-    background:#19b65d;
+background:#25d366;
 
-    border:none;
+border:none;
 
-    border-radius:40px;
+padding:14px 35px;
 
-    transition:.4s;
+border-radius:50px;
+
+font-weight:bold;
 
 }
 
 .btn-success:hover{
 
-    transform:translateY(-5px);
+transform:translateY(-3px);
 
-    background:#27db76;
-
-    box-shadow:0 15px 40px rgba(0,255,120,.35);
+background:#33e477;
 
 }
 
 .btn-outline-light{
 
-    border-radius:40px;
+padding:14px 35px;
+
+border-radius:50px;
+
+margin-left:15px;
 
 }
 
-/*================ PORTFOLIO ================*/
+/*================ ANIMATION ================*/
 
-.portfolio{
+@keyframes float{
 
-    padding:100px 0;
+0%{
 
-    background:#091710;
-
-}
-
-.portfolio h2{
-
-    font-size:42px;
-
-    margin-bottom:15px;
+transform:translateY(0px);
 
 }
 
-.portfolio p{
+50%{
 
-    color:#cccccc;
-
-}
-
-.portfolio-card{
-
-    background:rgba(255,255,255,.05);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:22px;
-
-    padding:25px;
-
-    transition:.45s;
-
-    text-align:center;
-
-    height:100%;
+transform:translateY(-18px);
 
 }
 
-.portfolio-card:hover{
+100%{
 
-    transform:translateY(-12px);
-
-    box-shadow:
-
-    0 20px 50px rgba(0,255,140,.18);
-
-    border-color:#27ff92;
-
-}
-
-.portfolio-card img{
-
-    width:100%;
-
-    height:220px;
-
-    object-fit:cover;
-
-    border-radius:15px;
-
-    margin-bottom:20px;
-
-}
-
-.portfolio-card h4{
-
-    font-size:24px;
-
-    margin-bottom:12px;
-
-}
-
-.portfolio-card p{
-
-    min-height:60px;
-
-}
-
-.badge{
-
-    font-size:14px;
-
-    padding:10px 16px;
-
-    border-radius:30px;
-
-}
-
-/*================ COUNTER ================*/
-
-.counter{
-
-    background:#06110b;
-
-    padding:80px 0;
-
-}
-
-.counter h1{
-
-    font-size:60px;
-
-    color:#22ff88;
-
-    font-weight:700;
-
-}
-
-.counter p{
-
-    color:#ffffff;
-
-    font-size:18px;
-
-}
-
-/*================ FOOTER ================*/
-
-footer{
-
-    background:#040a06;
-
-    padding:30px;
-
-    border-top:1px solid rgba(255,255,255,.08);
-
-}
-
-footer p{
-
-    margin:0;
-
-    color:#cccccc;
-
-}
-
-/*================ SCROLLBAR ================*/
-
-::-webkit-scrollbar{
-
-    width:10px;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#19c86c;
-
-    border-radius:30px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#08140d;
-
-}
-
-/*================ IMAGE EFFECTS ================*/
-
-.portfolio-card img{
-
-    transition:.45s;
-
-}
-
-.portfolio-card:hover img{
-
-    transform:scale(1.05);
-
-}
-
-/*================ RESPONSIVE ================*/
-
-@media(max-width:1200px){
-
-.hero h1{
-
-font-size:52px;
+transform:translateY(0px);
 
 }
 
 }
+
+/*================ MOBILE ================*/
 
 @media(max-width:992px){
 
@@ -319,21 +205,29 @@ font-size:52px;
 
 text-align:center;
 
-padding-top:100px;
-
-}
-
-.hero-logo{
-
-margin-top:40px;
-
-width:250px;
+padding-top:120px;
 
 }
 
 .hero h1{
 
-font-size:45px;
+font-size:48px;
+
+}
+
+.hero-image{
+
+margin-top:50px;
+
+width:260px;
+
+}
+
+.hero p{
+
+margin:auto;
+
+margin-bottom:30px;
 
 }
 
@@ -343,49 +237,19 @@ font-size:45px;
 
 .hero h1{
 
-font-size:36px;
+font-size:38px;
 
 }
 
-.portfolio{
+.hero h5{
 
-padding:70px 0;
-
-}
-
-.portfolio h2{
-
-font-size:32px;
-
-}
-
-.counter h1{
-
-font-size:42px;
-
-}
-
-.nav-link{
-
-margin-left:0;
-
-padding:12px;
-
-}
-
-}
-
-@media(max-width:576px){
-
-.hero h1{
-
-font-size:30px;
+font-size:15px;
 
 }
 
 .hero p{
 
-font-size:15px;
+font-size:17px;
 
 }
 
@@ -399,25 +263,37 @@ margin-bottom:15px;
 
 .btn-outline-light{
 
-margin-left:0 !important;
+margin-left:0;
 
 }
 
-.hero-logo{
+.nav-link{
 
-width:180px;
+margin-left:0;
 
-}
-
-.portfolio-card img{
-
-height:190px;
+padding:12px;
 
 }
 
-.counter h1{
+}
 
-font-size:34px;
+@media(max-width:500px){
+
+.hero h1{
+
+font-size:31px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.hero-image{
+
+width:190px;
 
 }
 
