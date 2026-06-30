@@ -407,13 +407,12 @@ color:#ffffff;
 /*==================== PRODUCTS PAGE ====================*/
 
 .products-hero{
-padding:170px 0 90px;
-background:linear-gradient(180deg,#071b14 0%,#081f18 100%);
-text-align:center;
+    display:none;
 }
 
 .products-section{
-padding-bottom:80px;
+    padding-top:120px;
+    padding-bottom:80px;
 }
 
 .product-card{
