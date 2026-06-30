@@ -439,6 +439,7 @@ box-shadow:0 15px 40px rgba(35,209,139,.25);
     background:#ffffff;
     padding:20px;
     display:block;
+   border-radius:22px 22px 0 0;
 }
 
 .product-badge{
