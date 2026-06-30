@@ -307,3 +307,99 @@ margin-bottom:15px;
 }
 
 }
+
+/*================ ABOUT SECTION ================*/
+
+.about{
+
+padding:120px 0;
+
+background:#0b1f18;
+
+}
+
+.about-image{
+
+border-radius:25px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+transition:.4s;
+
+}
+
+.about-image:hover{
+
+transform:scale(1.03);
+
+}
+
+.section-title{
+
+font-size:48px;
+
+font-weight:700;
+
+margin:20px 0;
+
+}
+
+.about-text{
+
+color:#d5e3dc;
+
+font-size:17px;
+
+line-height:1.9;
+
+margin-bottom:40px;
+
+}
+
+.stat-card{
+
+background:rgba(255,255,255,.05);
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#2cff8f;
+
+box-shadow:0 20px 45px rgba(44,255,143,.15);
+
+}
+
+.stat-card h3{
+
+font-size:42px;
+
+font-weight:700;
+
+color:#2cff8f;
+
+margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+margin:0;
+
+color:#ffffff;
+
+}
