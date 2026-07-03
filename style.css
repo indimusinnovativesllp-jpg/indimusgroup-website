@@ -480,13 +480,23 @@ color:#ffffff;
 }
 
 .product-badge{
-display:inline-block;
-padding:6px 14px;
-background:#23d18b;
-color:#fff;
-border-radius:30px;
-font-size:.8rem;
-font-weight:600;
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:#18b869;
+
+    color:#fff;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
 }
 
 .product-card h3{
