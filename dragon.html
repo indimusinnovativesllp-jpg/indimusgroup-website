@@ -8,11 +8,131 @@
 
 <title>Dragon Smart Care System | Indimus Group</title>
 
+<meta name="description" content="Dragon Smart Care System by Indimus Group - An innovative cultivation support system for modern dragon fruit farming.">
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background:#07160d;
+    color:#ffffff;
+}
+
+.product-hero{
+    padding:140px 0 80px;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border-radius:22px;
+    transition:.45s;
+    overflow:hidden;
+}
+
+.glass-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(0,255,170,.18);
+}
+
+.hero-image{
+    transition:.5s;
+}
+
+.hero-image:hover{
+    transform:scale(1.03) rotate(-1deg);
+}
+
+.product-badge{
+    display:inline-block;
+    padding:8px 18px;
+    background:#00c37a;
+    border-radius:30px;
+    font-size:.9rem;
+    font-weight:600;
+}
+
+.section-title{
+    font-weight:700;
+    margin-bottom:35px;
+}
+
+.feature-box{
+    padding:30px;
+    height:100%;
+    text-align:center;
+}
+
+.feature-box i{
+    font-size:45px;
+    color:#00d48b;
+    margin-bottom:18px;
+}
+
+.spec-table{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.spec-table table{
+    margin:0;
+}
+
+.spec-table td{
+    padding:16px;
+}
+
+.spec-table tr:nth-child(even){
+    background:rgba(255,255,255,.03);
+}
+
+.gallery-img{
+    border-radius:18px;
+    transition:.45s;
+}
+
+.gallery-img:hover{
+    transform:scale(1.05);
+}
+
+.timeline-box{
+    padding:25px;
+    height:100%;
+}
+
+.cta-box{
+    border-radius:25px;
+    padding:60px;
+    background:linear-gradient(135deg,#0f5132,#00b96b);
+}
+
+footer{
+    background:#031008;
+}
+
+.btn{
+    border-radius:40px;
+    padding:12px 24px;
+}
+
+@media(max-width:768px){
+
+.product-hero{
+padding-top:120px;
+}
+
+.cta-box{
+padding:35px 25px;
+}
+
+}
+
+</style>
 
 </head>
 
@@ -23,14 +143,14 @@
 <div class="container">
 
 <a class="navbar-brand" href="index.html">
-<img src="logo.png" height="55">
+<img src="logo.png" height="55" alt="Indimus Group">
 </a>
 
 <div class="ms-auto">
 
 <a href="products.html" class="btn btn-outline-light">
 
-← Back to Products
+<i class="fa-solid fa-arrow-left"></i> Back to Products
 
 </a>
 
@@ -40,84 +160,113 @@
 
 </nav>
 
-<section class="container" style="padding-top:130px;padding-bottom:80px;">
+<section class="product-hero">
+
+<div class="container">
 
 <div class="row align-items-center g-5">
 
-<div class="col-lg-6">
+<div class="col-lg-6" data-aos="fade-right">
 
-<img src="dragon.png" class="img-fluid rounded-4 shadow">
+<div class="glass-card p-3">
+
+<img src="dragon.png" class="img-fluid hero-image rounded-4" alt="Dragon Smart Care System">
 
 </div>
 
-<div class="col-lg-6">
+</div>
+
+<div class="col-lg-6" data-aos="fade-left">
 
 <span class="product-badge">
 
-Commercial Product
+Commercial Agricultural Innovation
 
 </span>
 
-<h1 class="display-5 fw-bold mt-3">
+<h1 class="display-4 fw-bold mt-4">
 
 Dragon Smart Care System
 
 </h1>
 
-<p class="lead">
+<p class="lead mt-4">
 
-An innovative cultivation support system developed to simplify dragon fruit farming with improved durability, stability and efficient plant management.
-
-</p>
-
-<hr>
-
-<h4>Purpose</h4>
-
-<p>
-
-Designed to improve crop support, reduce maintenance and provide a professional cultivation solution for farmers.
+The Dragon Smart Care System is an innovative cultivation support solution developed by Indimus Group to simplify dragon fruit farming. It offers excellent structural stability, improved plant support, enhanced durability, and efficient crop management for both small-scale growers and commercial plantations.
 
 </p>
 
-<h4 class="mt-4">
+<div class="row mt-4">
 
-Features
+<div class="col-6 mb-3">
 
-</h4>
+<div class="glass-card text-center p-3">
 
-<ul>
+<h3 class="text-success">UV</h3>
 
-<li>Heavy Duty Design</li>
+<p class="mb-0">Resistant Material</p>
 
-<li>UV Resistant Material</li>
+</div>
 
-<li>Long Life Construction</li>
+</div>
 
-<li>Easy Installation</li>
+<div class="col-6 mb-3">
 
-<li>Suitable for Commercial Farming</li>
+<div class="glass-card text-center p-3">
 
-</ul>
+<h3 class="text-success">10+</h3>
 
-<div class="mt-4">
+<p class="mb-0">Years Durability*</p>
 
-<a href="#"
-class="btn btn-primary me-2">
+</div>
+
+</div>
+
+<div class="col-6">
+
+<div class="glass-card text-center p-3">
+
+<h3 class="text-success">Easy</h3>
+
+<p class="mb-0">Installation</p>
+
+</div>
+
+</div>
+
+<div class="col-6">
+
+<div class="glass-card text-center p-3">
+
+<h3 class="text-success">100%</h3>
+
+<p class="mb-0">Reusable Design</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="mt-5">
+
+<a href="#" class="btn btn-primary me-2">
 
 <i class="fa-solid fa-circle-play"></i>
-
 Watch Demo
 
 </a>
 
-<a href="https://wa.me/919847475673?text=Hello%20Indimus%20Group,%20I%20am%20interested%20in%20the%20Dragon%20Smart%20Care%20System.%20Please%20share%20more%20details."
+<a href="https://wa.me/919847475673?text=Hello%20Indimus%20Group,%20I%20am%20interested%20in%20the%20Dragon%20Smart%20Care%20System."
 class="btn btn-success"
 target="_blank">
 
-<i class="fab fa-whatsapp"></i> Enquire on WhatsApp
+<i class="fab fa-whatsapp"></i>
+WhatsApp Enquiry
 
 </a>
+
+</div>
 
 </div>
 
@@ -127,17 +276,410 @@ target="_blank">
 
 </section>
 
-<footer class="text-center py-5">
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="section-title text-center" data-aos="fade-up">
+
+Key Features
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="glass-card feature-box">
+
+<i class="fas fa-shield-alt"></i>
+
+<h4>Heavy Duty Structure</h4>
 
 <p>
 
-© 2026 Indimus Group
+Designed for long-term outdoor farming conditions.
 
 </p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="glass-card feature-box">
+
+<i class="fas fa-sun"></i>
+
+<h4>UV Protection</h4>
+
+<p>
+
+Manufactured using premium UV resistant polymer.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="glass-card feature-box">
+
+<i class="fas fa-seedling"></i>
+
+<h4>Healthy Plant Growth</h4>
+
+<p>
+
+Provides better plant support and improved cultivation.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="glass-card feature-box">
+
+<i class="fas fa-water"></i>
+
+<h4>Low Maintenance</h4>
+
+<p>
+
+Reduces maintenance effort throughout cultivation.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="glass-card feature-box">
+
+<i class="fas fa-screwdriver-wrench"></i>
+
+<h4>Easy Assembly</h4>
+
+<p>
+
+Simple installation with minimal tools.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="glass-card feature-box">
+
+<i class="fas fa-leaf"></i>
+
+<h4>Eco Friendly</h4>
+
+<p>
+
+Reusable material supporting sustainable farming.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="section-title text-center">
+
+Product Specifications
+
+</h2>
+
+<div class="glass-card spec-table">
+
+<table class="table table-dark table-borderless align-middle">
+
+<tbody>
+
+<tr>
+
+<td><strong>Product Name</strong></td>
+
+<td>Dragon Smart Care System</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Application</strong></td>
+
+<td>Dragon Fruit Cultivation</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Material</strong></td>
+
+<td>Premium UV Stabilized Polymer</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Usage</strong></td>
+
+<td>Commercial & Home Farming</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Installation</strong></td>
+
+<td>Simple & Fast</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Durability</strong></td>
+
+<td>Long Life Construction</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Maintenance</strong></td>
+
+<td>Minimal</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="section-title text-center">
+
+How It Works
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="glass-card timeline-box text-center">
+
+<h1>1</h1>
+
+<h5>Install</h5>
+
+<p>Position the support system securely.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="glass-card timeline-box text-center">
+
+<h1>2</h1>
+
+<h5>Plant</h5>
+
+<p>Grow dragon fruit with proper support.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="glass-card timeline-box text-center">
+
+<h1>3</h1>
+
+<h5>Maintain</h5>
+
+<p>Requires very little maintenance.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="glass-card timeline-box text-center">
+
+<h1>4</h1>
+
+<h5>Harvest</h5>
+
+<p>Enjoy improved cultivation performance.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="section-title text-center">
+
+Gallery
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<img src="dragon.png" class="img-fluid gallery-img">
+
+</div>
+
+<div class="col-md-4">
+
+<img src="dragon.png" class="img-fluid gallery-img">
+
+</div>
+
+<div class="col-md-4">
+
+<img src="dragon.png" class="img-fluid gallery-img">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="cta-box text-center">
+
+<h2 class="fw-bold">
+
+Ready to Modernize Your Dragon Fruit Farming?
+
+</h2>
+
+<p class="mt-3 mb-4">
+
+Contact Indimus Group today to learn more about the Dragon Smart Care System.
+
+</p>
+
+<a href="https://wa.me/919847475673?text=Hello%20Indimus%20Group,%20I%20would%20like%20to%20know%20more%20about%20the%20Dragon%20Smart%20Care%20System."
+target="_blank"
+class="btn btn-light btn-lg">
+
+<i class="fab fa-whatsapp"></i>
+
+Contact on WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="py-5 text-center">
+
+<div class="container">
+
+<img src="logo.png" height="60" class="mb-3">
+
+<p>
+
+© 2026 Indimus Group. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+duration:1000,
+once:true
+});
+
+document.querySelectorAll('.glass-card').forEach(card=>{
+
+card.addEventListener('mousemove',e=>{
+
+const rect=card.getBoundingClientRect();
+
+const x=e.clientX-rect.left;
+const y=e.clientY-rect.top;
+
+card.style.transform=
+`perspective(1000px)
+rotateX(${-(y-rect.height/2)/20}deg)
+rotateY(${(x-rect.width/2)/20}deg)
+translateY(-8px)`;
+
+});
+
+card.addEventListener('mouseleave',()=>{
+
+card.style.transform='perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+
+});
+
+});
+
+</script>
 
 </body>
 
