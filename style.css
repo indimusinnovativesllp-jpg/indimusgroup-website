@@ -490,3 +490,20 @@ margin-bottom:20px;
 }
 
 }
+
+/* Watch Demo Button */
+
+.btn-primary{
+    background:#0d6efd;
+    border:none;
+    border-radius:50px;
+    padding:15px 34px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#2b7fff;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(13,110,253,.35);
+}
