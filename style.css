@@ -417,7 +417,15 @@ color:#ffffff;
 
 .product-image-container{
 
-    padding:22px 22px 0;
+    padding:0;
+
+    margin:0 0 22px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    background:transparent;
 
 }
 
@@ -429,17 +437,17 @@ color:#ffffff;
 
     border-radius:18px;
 
-    background:#ffffff;
+    background:transparent;
 
     object-fit:cover;
 
-    transition:.4s ease;
+    transition:.45s ease;
 
 }
 
 .product-card:hover .product-img{
 
-    transform:scale(1.02);
+    transform:scale(1.03);
 
 }
 
