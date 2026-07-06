@@ -433,13 +433,15 @@ color:#ffffff;
 
     width:100%;
 
+    height:260px;
+
     display:block;
 
     border-radius:18px;
 
-    background:transparent;
+    background:#ffffff;
 
-    object-fit:cover;
+    object-fit:contain;
 
     transition:.45s ease;
 
