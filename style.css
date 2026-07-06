@@ -417,7 +417,7 @@ color:#ffffff;
 
 .product-image-container{
 
-    padding:0;
+    padding:10px;
 
     margin:0 0 22px;
 
@@ -425,7 +425,7 @@ color:#ffffff;
 
     border-radius:18px;
 
-    background:transparent;
+    background:#ffffff;
 
 }
 
